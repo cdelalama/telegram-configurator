@@ -43,5 +43,26 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
   }
+  #root {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+}
+
+/* TWA specific styles */
+body {
+  background: var(--tg-theme-bg-color, #ffffff);
+  color: var(--tg-theme-text-color, #000000);
+}
+
+button {
+  background: var(--tg-theme-button-color, #0088cc);
+  color: var(--tg-theme-button-text-color, #ffffff);
+}
+
+a {
+  color: var(--tg-theme-link-color, #0088cc);
 }
